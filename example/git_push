@@ -1,0 +1,10 @@
+#!/bin/bash 
+
+# Bash script to partition .gitignore amongst varying remotes 
+
+echo "Pushing to $1: branch $2"  
+echo "Loading in ignored files...."
+cat "$1_ignore" > .gitignore
+# git push $1 $2 
+
+
